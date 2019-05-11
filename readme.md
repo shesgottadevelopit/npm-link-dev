@@ -16,7 +16,7 @@ My plan was to create a package that would:
 ## Challenges
 - For some reason, some packages (e.g. gulp) were not reflecting that they were globally installed using the following command: `npm list -g` which made it a challenge to check with accuracy.
 
-Interim solution:
+## Interim solution:
 - I created a script called `devDependencies.js` and stored it in my WSL user directory (e.g. `/home/myUserName/bin`). This script is able to:
     1. check if a package.json exists. If so it copies it into an object
     2. chekcs if there is a devDependencies property in my newly created packageJSON object. If so, it will create an array with only the keys (which are basically the names of the packages in the package.json).
